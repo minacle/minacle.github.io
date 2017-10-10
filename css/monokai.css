@@ -69,6 +69,9 @@
 .highlight {
     color: #f8f8f2;
 }
+pre.highlight {
+    background-color: #272822;
+}
 p code {
     background-color: #272822;
     color: #f8f8f2;
