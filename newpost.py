@@ -19,7 +19,7 @@ filename = "%s-%s.md" % (time.strftime("%Y-%m-%d", now), slug)
 with open("_posts/%s" % filename, "w", encoding="utf-8") as f:
     f.write("---\n")
     f.write("layout: %s\n" % layout)
-    f.write("date: %s\n" % time.strftime("%Y-%m-%d %H:%M:%S", now))
+    f.write("date: %s\n" % time.strftime("%Y-%m-%d %H:%M:%S %z", now))
     f.write("title: %s\n" % title)
     f.write("slug: %s\n" % slug)
     f.write("categories: \n")
