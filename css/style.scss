@@ -1,0 +1,101 @@
+---
+---
+
+@charset "utf-8";
+
+html {
+    @media (min-width: 960px) {
+        font-size: 15pt;
+    }
+    @media (max-width: 639px) {
+        font-size: 11pt;
+    }
+    @media (min-width: 640px) and (max-width: 959px) {
+        font-size: 12pt;
+    }
+}
+
+html {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Lucida Grande", "Segoe UI", Arial, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Meiryo UI", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", "나눔고딕", "NanumGothic", sans-serif;
+    color: black;
+    background-color: whitesmoke;
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+body > * > div {
+    max-width: 940px;
+    margin: auto;
+    padding: 1em;
+}
+
+a {
+    color: crimson;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+    &.plain {
+        color: black;
+    }
+}
+
+pre, code {
+    font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+}
+
+pre.highlight {
+    padding: 1em 2em;
+    border-radius: .5em;
+    overflow-x: auto;
+    font-size: .8em;
+}
+
+p code {
+    border-radius: .25em;
+    padding: 0 .5em;
+    display: inline-block;
+    white-space: pre;
+    overflow-x: auto;
+    font-size: .8em;
+}
+
+blockquote {
+    background: gainsboro;
+    border-radius: .5em;
+    color: dimgrey;
+    margin: 0;
+    padding: 1em 2em;
+    p {
+        display: inline;
+    }
+}
+
+del {
+    color: grey;
+}
+
+footer {
+    border-top: 1px solid gainsboro;
+    .copyright {
+        font-size: .8em;
+        float: left;
+    }
+    .license {
+        font-size: .6em;
+        float: right;
+        text-align: right;
+    }
+    .disclaimer {
+        font-size: .6em;
+        text-align: right;
+    }
+}
+
+.clearfix {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}

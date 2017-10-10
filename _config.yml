@@ -1,0 +1,7 @@
+permalink: /post/:slug/
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+exclude:
+  - "*.py"
