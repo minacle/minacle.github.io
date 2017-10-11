@@ -3,8 +3,10 @@ layout: post
 date: 2017-10-10 14:30:26 +0900
 title: GitHub Pages에 Jekyll로 블로그 만들기
 slug: create-a-blog-with-jekyll-on-github-pages
-categories: 
-tags: 
+categories:
+tags:
+  - GitHub Pages
+  - Jekyll
 ---
 
 > 이 문제는 전에 그 방법대로 하니까 해결됐는데, 그 방법이 도대체 어디 있더라..

@@ -3,8 +3,9 @@ layout: post
 date: 2017-10-11 01:10:23 +0900
 title: Homebrew 설치하기
 slug: installing-homebrew
-categories: 
-tags: 
+categories:
+tags:
+    - Homebrew
 ---
 
 [Homebrew]는 정말 매우 소중한 macOS용 패키지 매니저다. */usr/local* 디렉토리를 만드는 게 아니라면 어떠한 상황에도 `sudo`를 요구하지 않는다.

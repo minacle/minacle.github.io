@@ -3,8 +3,10 @@ layout: post
 date: 2017-10-10 23:57:34 +0900
 title: pyenv로 Python 설치하기
 slug: installing-python-with-pyenv
-categories: Python
-tags: 
+categories:
+    - Python
+tags:
+    - pyenv
 ---
 
 디렉토리 별로 실행할 [Python]의 버전을 지정할 수 있는 [pyenv]는 매번 Python을 설치할 때마다 코드를 직접 컴파일한다. 그렇기 때문에 의존성 문제가 발생할 수 있는데, 특히나 macOS에서는 기본적으로 제공하지 않는 라이브러리가 있어 꽤 까다로운 편이다.
