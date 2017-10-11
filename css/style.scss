@@ -8,10 +8,10 @@ html {
         font-size: 15pt;
     }
     @media (max-width: 639px) {
-        font-size: 11pt;
+        font-size: 12pt;
     }
     @media (min-width: 640px) and (max-width: 959px) {
-        font-size: 12pt;
+        font-size: 13pt;
     }
 }
 
@@ -25,11 +25,10 @@ html {
 
 body > * > div {
     max-width: 940px;
-    margin: auto;
-    padding: 1em;
+    margin: 1em auto;
 }
 
-a {
+a[href] {
     color: crimson;
     text-decoration: none;
     &:hover {
@@ -97,5 +96,14 @@ footer {
         display: block;
         content: "";
         clear: both;
+    }
+}
+
+nav {
+    .prev {
+        text-align: left;
+    }
+    .next {
+        text-align: right;
     }
 }

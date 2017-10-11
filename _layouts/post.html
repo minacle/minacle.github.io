@@ -5,14 +5,32 @@ layout: basic
     <div>
         <h1><a class="plain" href="{{ page.url }}">{{ page.title }}</a></h1>
         {{ content }}
-        <p><small>
-            {{ page.date | date: '%Y. %-m. %-d. %H:%M %Z' }}
-{% if page.categories.count > 0 %}
-            |
+        <div class="meta">
+            <p><small>
+                {{ page.date | date: '%Y. %-m. %-d. %H:%M' }}
+{% if page.categories.size > 0 %}
+                |
     {% for category in page.categories %}
-            <a href="/{{ category }}">{{ category }}</a>{% if category != page.categories.last %}, {% endif %}
+                <a class="category">{{ category }}</a>{% if category != page.categories.last %}, {% endif %}
     {% endfor %}
 {% endif %}
-        </small></p>
+{% if page.tags.size > 0 %}
+                |
+    {% for tag in page.tags %}
+                <a class="tag">{{ tag }}</a>{% if tag != page.tags.last %}, {% endif %}
+    {% endfor %}
+{% endif %}
+            </small></p>
+        </div>
     </div>
 </article>
+<nav>
+    <div>
+{% if page.previous.url %}
+        <p class="prev"><a href="{{page.previous.url}}">&larr; {{page.previous.title}}</a></p>
+{% endif %}
+{% if page.next.url %}
+        <p class="next"><a href="{{page.next.url}}">{{page.next.title}} &rarr;</a></p>
+{% endif %}
+    </div>
+</nav>
