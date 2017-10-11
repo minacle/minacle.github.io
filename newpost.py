@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os
 from slugify import slugify
 import sys
 import time
@@ -14,14 +15,18 @@ else:
 
 slug = slugify(title)
 
-filename = "%s-%s.md" % (time.strftime("%Y-%m-%d", now), slug)
+filename = "_posts/%s-%s.md" % (time.strftime("%Y-%m-%d", now), slug)
 
-with open("_posts/%s" % filename, "w", encoding="utf-8") as f:
-    f.write("---\n")
-    f.write("layout: %s\n" % layout)
-    f.write("date: %s\n" % time.strftime("%Y-%m-%d %H:%M:%S %z", now))
-    f.write("title: %s\n" % title)
-    f.write("slug: %s\n" % slug)
-    f.write("categories: \n")
-    f.write("tags: \n")
-    f.write("---\n")
+if os.path.exists(filename):
+    print("%s already exists." % filename, file=sys.stderr)
+    sys.exit(1)
+else:
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write("---\n")
+        f.write("layout: %s\n" % layout)
+        f.write("date: %s\n" % time.strftime("%Y-%m-%d %H:%M:%S %z", now))
+        f.write("title: %s\n" % title)
+        f.write("slug: %s\n" % slug)
+        f.write("categories: \n")
+        f.write("tags: \n")
+        f.write("---\n")
