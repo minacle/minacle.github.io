@@ -19,7 +19,7 @@ html {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Lucida Grande", "Segoe UI", Arial, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Meiryo UI", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", "나눔고딕", "NanumGothic", sans-serif;
     color: black;
     background-color: whitesmoke;
-    line-height: 1.5;
+    line-height: 1.75;
     word-break: keep-all;
 }
 
@@ -105,5 +105,43 @@ nav {
     }
     .next {
         text-align: right;
+    }
+}
+
+table {
+    min-width: 100%;
+    overflow-x: auto;
+    border-spacing: 0;
+    td {
+        border-bottom: 1px solid lightgrey;
+        padding: .2em .4em;
+        &:first-child {
+            padding-left: .8em;
+        }
+        &:last-child {
+            padding-right: .8em;
+        }
+    }
+    th {
+        @extend td;
+        border-bottom: 1px solid grey;
+    }
+    tbody tr:last-child td {
+        border-bottom: none;
+    }
+}
+
+.footnotes {
+    p:first-child {
+        margin-top: 2em;
+    }
+    p:last-child {
+        margin-bottom: 2em;
+    }
+}
+
+.meta {
+    p {
+        margin-top: 2em;
     }
 }
