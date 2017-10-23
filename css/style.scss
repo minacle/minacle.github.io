@@ -129,6 +129,7 @@ nav {
 }
 
 table {
+    min-width: 100%;
     border-spacing: 0;
     td {
         border-bottom: 1px solid lightgrey;
@@ -150,7 +151,7 @@ table {
 }
 
 .table {
-    min-width: 100%;
+    width: 100%;
     overflow-x: auto;
 }
 
