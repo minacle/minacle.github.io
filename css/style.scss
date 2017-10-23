@@ -3,17 +3,24 @@
 
 @charset "utf-8";
 
-html {
-    @media (min-width: 960px) {
+@media (min-width: 960px) {
+    html {
         font-size: 15pt;
     }
-    @media (max-width: 639px) {
-        font-size: 12pt;
-    }
-    @media (min-width: 640px) and (max-width: 959px) {
+}
+
+@media (min-width: 640px) and (max-width: 959px) {
+    html {
         font-size: 13pt;
     }
 }
+
+@media (max-width: 639px) {
+    html {
+        font-size: 12pt;
+    }
+}
+
 
 html {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Lucida Grande", "Segoe UI", Arial, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Meiryo UI", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", "나눔고딕", "NanumGothic", sans-serif;
@@ -21,11 +28,14 @@ html {
     background-color: whitesmoke;
     line-height: 1.75;
     word-break: keep-all;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 body > * > div {
     max-width: 940px;
     margin: 1em auto;
+    padding: 0 1em;
 }
 
 a[href] {
@@ -109,8 +119,6 @@ nav {
 }
 
 table {
-    min-width: 100%;
-    overflow-x: auto;
     border-spacing: 0;
     td {
         border-bottom: 1px solid lightgrey;
@@ -129,6 +137,11 @@ table {
     tbody tr:last-child td {
         border-bottom: none;
     }
+}
+
+.table {
+    min-width: 100%;
+    overflow-x: auto;
 }
 
 .footnotes {
