@@ -7,11 +7,11 @@ layout: basic
         {{ content }}
         <div class="meta">
             <p><small>
-                {{ page.date | date: '%Y. %-m. %-d. %H:%M' }}
+                    <span class="date">{{ page.date | date: '%Y. %-m. %-d. %H:%M' }}</span>
 {% if page.categories.size > 0 %}
                 |
     {% for category in page.categories %}
-                <a class="category">{{ category }}</a>{% if category != page.categories.last %}, {% endif %}
+                <a class="category"><b>{{ category }}</b></a>{% if category != page.categories.last %}, {% endif %}
     {% endfor %}
 {% endif %}
 {% if page.tags.size > 0 %}
