@@ -22,8 +22,13 @@
 }
 
 
+$sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", "나눔고딕", "NanumGothic", sans-serif;
+
+$monospace: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+
+
 html {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Lucida Grande", "Segoe UI", Arial, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Meiryo UI", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", "나눔고딕", "NanumGothic", sans-serif;
+    font-family: $sans-serif;
     color: black;
     background-color: whitesmoke;
     line-height: 1.75;
@@ -50,7 +55,7 @@ a[href] {
 }
 
 pre, code {
-    font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+    font-family: $monospace;
 }
 
 pre.highlight {
