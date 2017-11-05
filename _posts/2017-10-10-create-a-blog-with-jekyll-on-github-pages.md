@@ -7,6 +7,8 @@ categories:
 tags:
   - GitHub Pages
   - Jekyll
+post_license: by-nc-sa
+code_license: Unlicense
 ---
 
 > 이 문제는 전에 그 방법대로 하니까 해결됐는데, 그 방법이 도대체 어디 있더라..

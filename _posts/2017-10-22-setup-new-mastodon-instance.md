@@ -6,6 +6,8 @@ slug: setup-new-mastodon-instance
 categories: 
 tags:
   - Mastodon
+post_license: by-nc-sa
+code_license: Unlicense
 ---
 
 > 여러분이 직접 호스트하는, 세계적으로 상호 연결된 마이크로 블로깅 커뮤니티  

@@ -1,0 +1,28 @@
+zero:
+  icon: https://i.creativecommons.org/p/zero/1.0/88x31.png
+  link: https://creativecommons.org/publicdomain/zero/1.0/deed.ko
+  text: 퍼블릭 도메인 기증 1.0 보편적
+by:
+  icon: https://i.creativecommons.org/l/by/4.0/88x31.png
+  link: http://creativecommons.org/licenses/by/4.0/deed.ko
+  text: 저작자표시 4.0 국제
+by-sa:
+  icon: https://i.creativecommons.org/l/by-sa/4.0/88x31.png
+  link: http://creativecommons.org/licenses/by-sa/4.0/deed.ko
+  text: 저작자표시-동일조건변경허락 4.0 국제
+by-nd:
+  icon: https://i.creativecommons.org/l/by-nd/4.0/88x31.png
+  link: http://creativecommons.org/licenses/by-nd/4.0/deed.ko
+  text: 저작자표시-변경금지 4.0 국제
+by-nc:
+  icon: https://i.creativecommons.org/l/by-nc/4.0/88x31.png
+  link: http://creativecommons.org/licenses/by-nc/4.0/deed.ko
+  text: 저작자표시-비영리 4.0 국제
+by-nc-sa:
+  icon: https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png
+  link: http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ko
+  text: 저작자표시-비영리-동일조건변경허락 4.0 국제
+by-nc-nd:
+  icon: https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png
+  link: http://creativecommons.org/licenses/by-nc-nd/4.0/deed.ko
+  text: 저작자표시-비영리-변경금지 4.0 국제

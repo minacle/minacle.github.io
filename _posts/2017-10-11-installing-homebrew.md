@@ -6,6 +6,8 @@ slug: installing-homebrew
 categories:
 tags:
     - Homebrew
+post_license: by-nc-sa
+code_license: Unlicense
 ---
 
 [Homebrew]는 정말 매우 소중한 macOS용 패키지 매니저다. */usr/local* 디렉토리를 만드는 게 아니라면 어떠한 상황에도 `sudo`를 요구하지 않는다.

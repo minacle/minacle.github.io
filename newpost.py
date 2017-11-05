@@ -29,4 +29,6 @@ else:
         f.write("slug: %s\n" % slug)
         f.write("categories: \n")
         f.write("tags: \n")
+        f.write("post_license: by-nc-sa\n")
+        f.write("code_license: Unlicense\n")
         f.write("---\n")
