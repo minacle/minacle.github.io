@@ -1,15 +1,35 @@
 <footer>
     <div>
-        <h1><a href="/">Minacle develop</a></h1>
+        <h1 class="title"><a href="/">Minacle develop</a></h1><p class="title"><small>(with: </small><a href="/atom.xml">Atom</a><small>)</small></p>
+        <div class="clearfix"></div>
         <p class="copyright">
-            Copyright &copy; 2017 <a rel="author" href="https://github.com/minacle">Mayu Laierlence</a>.
+            Copyright &copy; <a href="https://github.com/minacle" rel="author" target="_blank">Mayu Laierlence</a>.
         </p>
         <p class="license">
-            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ko"><img alt="크리에이티브 커먼즈 라이센스" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br>이 저작물은 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ko">크리에이티브 커먼즈 저작자표시-비영리-동일조건변경허락 4.0 국제 라이센스</a>에 따라 이용할 수 있습니다.
+{% assign post_licenses = site.data.post_licenses %}
+{% assign code_licenses = site.data.code_licenses %}
+{% if page.id %}
+    {% assign post_license = page.post_license %}
+    {% if post_license == nil %}
+        {% assign post_license = 'zero' %}
+    {% endif %}
+            <a href="{{ post_licenses[post_license].link }}" rel="license" target="_blank"><img alt="크리에이티브 커먼즈 라이센스" src="{{ post_licenses[post_license].icon }}"></a>
+            <br>
+            이 포스트는 <a href="{{ post_licenses[post_license].link }}" rel="license" target="_blank">크리에이티브 커먼즈 {{ post_licenses[post_license].text }} 라이센스</a>에 따라 이용할 수 있습니다.
+            <br>
+    {% assign code_license = page.code_license %}
+    {% if code_license == nil %}
+        {% assign code_license = 'Unlicense' %}
+    {% endif %}
+            이 포스트에 포함된 코드는 <a href="{{ code_licenses[code_license].link }}" rel="license" target="_blank">{{ code_licenses[code_license].text }}</a>에 따라 이용할 수 있습니다.
+{% else %}
+    {% assign post_license = 'zero' %}
+            <a style="visibility: hidden;"><img alt="크리에이티브 커먼즈 라이센스" src="{{ post_licenses[post_license].icon }}"></a>
+{% endif %}
         </p>
         <div class="clearfix"></div>
         <p class="disclaimer">
-            이 페이지에는 잘못된 정보나 검증되지 않은 사실이 있을 수 있으며, 이로 인해 발생하는 문제에 대해 저작권자는 어떠한 책임도 지지 않습니다.<br>내용의 정정을 원하시는 경우 <a href="https://github.com/minacle/minacle.github.io/issues">이슈를 작성해주세요</a>.
+            이 블로그에는 잘못된 정보나 검증되지 않은 사실이 있을 수 있으며, 이로 인해 발생하는 문제에 대해 저작권자는 어떠한 책임도 지지 않습니다.<br>내용의 정정을 원하시는 경우 <a href="https://github.com/minacle/minacle.github.io/issues" rel="external" target="_blank">이슈를 작성해주세요</a>.
         </p>
     </div>
 </footer>

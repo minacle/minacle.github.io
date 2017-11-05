@@ -27,10 +27,10 @@ layout: basic
 <nav>
     <div>
 {% if page.previous.url %}
-        <p class="prev"><a href="{{page.previous.url}}">&larr; {{page.previous.title}}</a></p>
+        <p class="prev"><a href="{{page.previous.url}}" rel="prev">&larr; {{page.previous.title}}</a></p>
 {% endif %}
 {% if page.next.url %}
-        <p class="next"><a href="{{page.next.url}}">{{page.next.title}} &rarr;</a></p>
+        <p class="next"><a href="{{page.next.url}}" rel="next">{{page.next.title}} &rarr;</a></p>
 {% endif %}
     </div>
 </nav>
