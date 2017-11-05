@@ -168,6 +168,7 @@ table {
 
 .table {
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .footnotes {
