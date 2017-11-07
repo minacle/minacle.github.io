@@ -3,9 +3,9 @@ layout: post
 date: 2017-10-22 09:28:11 +0900
 title: 새 Mastodon 인스턴스 설치하기
 slug: setup-new-mastodon-instance
-categories: 
-tags:
+categories:
   - Mastodon
+tags:
 post_license: by-nc-sa
 code_license: Unlicense
 ---
