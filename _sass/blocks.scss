@@ -1,0 +1,76 @@
+html {
+    font-family: $sans-serif;
+    color: black;
+    background-color: whitesmoke;
+    line-height: 1.75;
+    word-break: keep-all;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+body>*>div {
+    max-width: 940px;
+    margin: 1em auto;
+    padding: 0 1em;
+}
+
+nav {
+    .prev {
+        text-align: left;
+    }
+    .next {
+        text-align: right;
+    }
+}
+
+footer {
+    border-top: 1px solid gainsboro;
+    .title {
+        display: inline;
+        small {
+            color: grey;
+        }
+    }
+    .copyright {
+        font-size: .8em;
+        float: left;
+        position: absolute;
+    }
+    .license {
+        font-size: .6em;
+        float: right;
+        text-align: right;
+    }
+    .disclaimer {
+        font-size: .6em;
+        text-align: right;
+    }
+}
+
+#modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, .25);
+    -webkit-overflow-scrolling: touch;
+    &[hidden] {
+        display: none;
+    }
+    &>div>div {
+        margin: 2em auto 4em;
+        background-color: whitesmoke;
+        border-radius: .5em;
+        padding: 1em 2em;
+    }
+}
+
+.clearfix {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}

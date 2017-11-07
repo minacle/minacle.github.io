@@ -1,0 +1,26 @@
+@media (min-width: 960px) {
+    html {
+        font-size: 15pt;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 959px) {
+    html {
+        font-size: 13pt;
+    }
+}
+
+@media (max-width: 639px) {
+    html {
+        font-size: 12pt;
+    }
+}
+
+@media (max-width: 479px) {
+    footer {
+        .title:not(:first-child)::before {
+            content: "\a";
+            white-space: pre;
+        }
+    }
+}

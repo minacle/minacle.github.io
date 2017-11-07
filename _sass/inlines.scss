@@ -1,0 +1,14 @@
+a[href] {
+    color: crimson;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+    &.plain {
+        color: black;
+    }
+}
+
+.date {
+    font-family: $monospace;
+}

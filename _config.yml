@@ -7,5 +7,7 @@ plugins:
   - jekyll-feed
 feed:
   path: atom.xml
+sass:
+  style: compressed
 exclude:
   - "*.py"
